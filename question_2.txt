@@ -1,0 +1,39 @@
+========================================
+              Question 2              
+========================================
+
+Question:
+Who is the youngest employee in the Engineering department?
+
+Generated SQL Query:
+SELECT FirstName,
+       LastName
+FROM employees
+WHERE Department = 'Engineering'
+ORDER BY Age ASC
+LIMIT 1;
+
+Query Results:
+('Jane', 'Doe')
+
+Optimization Suggestions:
+
+1. ADD an INDEX ON the 'Department'
+   AND 'Age' columns IN the 'employees' TABLE TO improve the performance OF the
+   WHERE clause
+   AND
+   ORDER BY clause. 2. USE a covering INDEX that includes the 'FirstName'
+   AND 'LastName' columns IN addition TO the 'Department'
+   AND 'Age' columns TO avoid accessing the actual TABLE DATA
+   AND speed up the query. 3. Consider USING a
+   MORE SPECIFIC COLUMN datatype
+   FOR the 'Department' field,
+   such AS an ENUM
+   OR VARCHAR WITH a limited LENGTH,
+   TO optimize
+   STORAGE
+   AND indexing. 4. Avoid USING wildcard characters IN the
+   WHERE clause IF possible, AS it can slow down the query performance. INSTEAD,
+   be AS SPECIFIC AS possible WITH the conditions. 5. Make sure STATISTICS ARE up TO
+
+========================================

@@ -1,0 +1,34 @@
+========================================
+              Question 5              
+========================================
+
+Question:
+Display the names of employees whose first and last names start with the same letter.
+
+Generated SQL Query:
+SELECT FirstName,
+       LastName
+FROM employees
+WHERE SUBSTR(FirstName, 1, 1) = SUBSTR(LastName, 1, 1);
+
+Query Results:
+('Robert', 'Rodriguez')
+('Thomas', 'Taylor')
+
+Optimization Suggestions:
+
+1. USE an INDEX ON the FirstName
+   AND LastName columns TO speed up the SEARCH
+   FOR matching FIRST characters. 2. INSTEAD OF USING the SUBSTR FUNCTION IN the
+   WHERE clause,
+   consider creating a computed COLUMN that stores the FIRST CHARACTER OF the FirstName
+   AND LastName columns. This can improve the query performance BY avoiding the need TO calculate the substrings
+   FOR EACH ROW during the query execution. 3.
+   LIMIT the number OF columns being selected TO ONLY the necessary ones (FirstName
+   AND LastName IN this CASE) TO REDUCE the amount OF DATA being processed. 4. Consider USING the LIKE
+   OPERATOR WITH a pattern MATCH
+   FOR the FIRST CHARACTER INSTEAD OF SUBSTR
+   FOR potentially better performance:
+   WHERE FirstName LIKE CONCAT(LastName, '%')
+
+========================================

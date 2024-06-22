@@ -1,0 +1,6 @@
+Show me the top 5 highest-paid employees.
+Who is the youngest employee in the Engineering department?
+Find all employees who were hired in the year 2019.
+Show the names of employees whose salary is above the average salary in their department.
+Display the names of employees whose first and last names start with the same letter.
+Find the employee with the highest salary in each department.

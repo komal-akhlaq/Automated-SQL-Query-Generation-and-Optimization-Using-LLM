@@ -1,0 +1,35 @@
+========================================
+              Question 3              
+========================================
+
+Question:
+Find all employees who were hired in the year 2019.
+
+Generated SQL Query:
+SELECT *
+FROM employees
+WHERE strftime('%Y', HireDate) = '2019';
+
+Query Results:
+(6, 'David', 'Jones', 38, 'Engineering', 'Manager', 95000, '2019-09-17', 1)
+(14, 'Richard', 'Gonzalez', 42, 'Engineering', 'DevOps', 95000, '2019-09-17', 6)
+
+Optimization Suggestions:
+
+1. Utilize indexing: Make sure that there IS an INDEX ON the HireDate COLUMN TO improve the SEARCH performance. 2. USE a
+   MORE SPECIFIC date RANGE: IF you ARE ONLY looking
+   FOR employees hired IN 2019,
+   you can specify a
+   MORE narrow date RANGE IN the
+   WHERE clause.
+   FOR example,
+   WHERE HireDate >= '2019-01-01'
+   AND HireDate < '2020-01-01'. 3. Avoid USING functions IN the WHERE clause: USING functions like strftime IN the WHERE clause can be costly IN terms OF performance. INSTEAD,
+   consider preprocessing the DATA TO EXTRACT the YEAR
+   FROM HireDate
+   AND store it IN a separate column. 4. REDUCE the number OF columns retrieved: INSTEAD OF USING
+   SELECT *,
+   ONLY
+   SELECT the
+
+========================================

@@ -1,0 +1,37 @@
+========================================
+              Question 4              
+========================================
+
+Question:
+Show the names of employees whose salary is above the average salary in their department.
+
+Generated SQL Query:
+SELECT FirstName,
+       LastName
+FROM employees
+WHERE Salary >
+    (SELECT AVG(Salary)
+     FROM employees e2
+     WHERE employees.Department = e2.Department)
+
+Query Results:
+No results found.
+
+Optimization Suggestions:
+
+1. USE EXISTS INSTEAD OF IN:
+   REPLACE the subquery WITH an EXISTS clause, AS it IS
+   MORE efficient. 2. USE
+   JOIN INSTEAD OF subquery: INSTEAD OF USING a subquery,
+   consider joining the employees TABLE WITH itself USING a SELF-
+   JOIN TO compare salaries within the same department. 3.
+   CREATE an INDEX ON the Department COLUMN: Creating an INDEX ON the Department COLUMN can improve the performance OF the query BY making the LOOKUP faster. 4. USE CTE (Common TABLE Expression): INSTEAD OF
+   HAVING a subquery,
+   consider USING a CTE TO calculate the average salary BY department
+   AND THEN
+   JOIN it WITH the employees table. 5.
+   LIMIT the columns IN the
+   SELECT STATEMENT: ONLY
+   SELECT the columns that ARE needed IN the OUTPUT TO REDUCE the
+
+========================================

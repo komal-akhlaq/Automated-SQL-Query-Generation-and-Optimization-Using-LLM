@@ -1,0 +1,37 @@
+========================================
+              Question 6              
+========================================
+
+Question:
+Find the employee with the highest salary in each department
+
+Generated SQL Query:
+SELECT Department,
+       FirstName,
+       LastName,
+       MAX(Salary) AS HighestSalary
+FROM employees
+GROUP BY Department;
+
+Query Results:
+('Engineering', 'Jane', 'Doe', 95000)
+('HR', 'Emily', 'Johnson', 70000)
+('Management', 'Alex', 'Johnson', 200000)
+('Marketing', 'Michael', 'Brown', 80000)
+('Sales', 'John', 'Smith', 85000)
+
+Optimization Suggestions:
+
+1. Indexing: Ensure that the 'Department' COLUMN IN the 'employees' TABLE IS indexed TO help speed up the GROUPING process. 2.
+   LIMIT the columns returned: IF you DO NOT need ALL the columns IN the OUTPUT,
+   ONLY
+   SELECT the columns that ARE necessary
+   FOR the query TO REDUCE the amount OF DATA that needs TO be processed. 3. USE a subquery: IF the 'Salary' COLUMN IS indexed,
+   you can USE a subquery TO FIRST find the maximum salary
+   FOR EACH department
+   AND THEN
+   JOIN this RESULT back TO the 'employees' TABLE TO retrieve the
+   CORRESPONDING employee information. 4. USE appropriate DATA types: Make sure the DATA types OF the columns IN the 'employees' TABLE ARE appropriate
+   FOR the DATA they ARE storing. USING
+
+========================================
