@@ -1,6 +1,6 @@
 # Automated-SQL-Query-Generation-and-Optimization-Using-LLM
 
-This repository contains a Jupyter Notebook focused on automating SQL tasks. The notebook demonstrates various SQL operations, automations, and integrations with Python to enhance data manipulation and analysis workflows. To run this repository in google colab you can simply click <a target="_blank" href="https://colab.research.google.com/github/komal-akhlaq/Automated-SQL-Query-Generation-and-Optimization-Using-LLM/blob/main/Automated__SQL.ipynb" target='_blank'>
+This repository contains a Jupyter Notebook focused on automating SQL tasks. The notebook demonstrates various SQL operations, automations, and integrations with Python to enhance data manipulation and analysis workflows. To run this repository in google colab you can simply click <a target="_blank" href="https://colab.research.google.com/github/komal-akhlaq/Automated-SQL-Query-Generation-and-Optimization-Using-LLM/blob/main/Automated__SQL.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
