@@ -26,4 +26,4 @@ This repository contains a Jupyter Notebook focused on automating SQL tasks. The
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/komal-akhlaq/Automated-SQL-Query-Generation-and-Optimization-Using-LLM
