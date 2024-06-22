@@ -5,6 +5,9 @@ This repository contains a Jupyter Notebook focused on automating SQL tasks. The
 ## Contents
 
 - **Automated__SQL.ipynb**: A Jupyter Notebook showcasing the automation of SQL tasks using Python. This includes examples of connecting to databases, executing queries, and processing results programmatically.
+- **input_questions.txt**: A text file containing natural language questions to be converted into SQL queries.
+- **database.db**: An SQLite database file used by the notebook to store and query data.
+- **Output Files**: The results of the queries are saved in text files named `Question1.txt` to `Question6.txt`.
 
 ## Features
 
@@ -17,7 +20,7 @@ This repository contains a Jupyter Notebook focused on automating SQL tasks. The
 
 - Jupyter Notebook
 - Python 3.x
-- Relevant Python libraries (e.g., `pandas`, `sqlalchemy`, `sqlite3`, etc.)
+- Relevant Python libraries (e.g., `pandas`, `sqlalchemy`, `sqlite3`, `openai`)
 
 ## Usage
 
